@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url(Fonts/SFProText-Regular.ttf);
+}
+
+:root{
+--font-family: 'SF Pro Text';
+--subtext-primary: #212B36 ;
+--active_button_bg: #0084FE;
+--transparent-background: #fff;
+--button-primary: #EBF6FF;
+--button-secondry: #FFCD01;
+
+}
+body {background: #F4F6F8!important;}
+.plan_wrapper { padding-top: 5rem; }
+.heading_plan { font-family: var(--font-family); font-style: normal; font-weight: 700; font-size: 34px; line-height: 41px;}
+.subheading_plan{font-family: var(--font-family); font-style: normal; font-weight: 400; font-size: 18px; line-height: 21px; text-transform: capitalize;color: var(--subtext-primary);}
+.plan_button_wrapper { display: flex; justify-content: center; }
+button.plan_button:first-child { border-right: none;border-radius: 10px 0px 0px 10px;border: 1px solid rgba(144, 149, 155, 0.32);} 
+button.plan_button { background: #FFFFFF; border: 1px solid rgba(144, 149, 155, 0.32); border-radius: 0px 10px 10px 0px; padding:15px 25px; font-family: var(--font-family) ; font-style: normal; font-weight: 700; font-size: 16px; line-height: 19px; text-transform: capitalize;color:var(--subtext-primary)}
+button.plan_button.active{background:var(--active_button_bg); color:#fff; border: 1px solid var(--active_button_bg);box-shadow: 0px 5px 10px rgba(0, 132, 254, 0.15);}
+
+
+
+
+
+/* Pricing block  */
+.plan_conatiner {max-width:1170px;margin:0 auto!important;justify-content: center; padding-top:32px;padding:32px 20px 0;}
+ .card.mb-4.shadow-sm.plan_card { padding: 0 20px;background: var(--transparent-background); box-shadow: 0px 20px 20px rgb(33 43 54 / 10%)!important; border-radius: 26px; border:none;}
+
+.plan_card_header {  display: grid;  justify-content: center;  align-items: center;  grid-template-columns: auto auto;   column-gap: 21px; background-color:var(--transparent-background);padding: 30px 0 20px 0;border-bottom: 2px solid rgba(99, 115, 129, 0.25)}
+ .plan_icon_wrapper { width: 60px;  height: 60px;  position: relative;background: #F4F5F5; border-radius: 50%;}
+.plan_icon_wrapper img{position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%);}
+.plan_card_header .plan_text{font-family: var(--font-family); color: var(--subtext-primary); font-style: normal; font-weight: 500; font-size: 20px; line-height: 24px;}
+.plan_card_header .plan_price {font-family: var(--font-family); font-style: normal; font-weight: 800; font-size: 26px; line-height: 31px; margin:0;}
+.plan_card_header .plan_price small{font-family: var(--font-family); font-style: normal; font-weight: 500; font-size: 18px; line-height: 21px; text-transform: lowercase;color:#90959B}
+.plan_details_points {padding-bottom: 18px; font-family: var(--font-family); font-style: normal; font-weight: 400; font-size: 16px; line-height: 19px; text-transform: capitalize; padding-left: 30px; position:relative;} 
+.plan_details_points img{padding-right: 12px;}
+.plan_body{padding:30px 0 0px 0;}
+.plan_lits_itmes{margin:30px 0 40px 0;}
+.plan_deatils_button{background-color: var(--button-primary)!important; color: var(--active_button_bg)!important; font-family: var(--font-family)!important; font-style: normal; font-weight: 500!important; font-size: 16px!important; line-height: 19px!important; text-transform: capitalize; padding: 14px 30px!important;}
+.plan_deatils_button:hover{background-color: var(--active_button_bg); color:var(--transparent-background)}
+.enterprice_section .plan_card_header {    background-color: transparent!important;}
+.enterprice_section .plan_icon_wrapper{        background: linear-gradient(to left top, #1d78dc, #1d78dc 50%, #1197de 75%, #1197de 75%)!important;}
+.enterprice_section .plan_card{background: linear-gradient(to left top, #1d78dc, #1d78dc 50%, #1197de 75%, #1197de 75%)!important;}
+.enterprice_section .plan_text {
+    color: #fff;
+} 
+.enterprice_section .plan_details_points{ color:var(--transparent-background)!important}
+.plan_deatils_button_2{background-color: var(--button-secondry)!important; color: var(--subtext-primary)!important; font-family: var(--font-family)!important; font-style: normal; font-weight: 500!important; font-size: 16px!important; line-height: 19px!important; text-transform: capitalize; padding: 14px 30px!important;}
+
+
+
+.evm-ab-wiser-checkbox.checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #f5f5f5!important;
+    border-radius: 50%;
+}
+.evm-ab-wiser-checkbox:after {
+    content:"";
+    position:absolute;
+    display:block;
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #242424;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
